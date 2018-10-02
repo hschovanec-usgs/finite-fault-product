@@ -1,3 +1,4 @@
+
 Status
 =======
 
@@ -17,7 +18,7 @@ project and earthquake event pages.
 
 # Installing
 
-If you already have a miniconda or anaconda Python 3.X environment:
+If you already have a miniconda or anaconda Python 3.5 environment:
 
  - `conda install impactutils`
  - `conda install libcomcat`
@@ -26,11 +27,11 @@ If you already have a miniconda or anaconda Python 3.X environment:
  - `conda install openquake.engine`
  - `conda install openpyxl`
  - `conda install pandas`
- - `pip install git+https://github.com/hschovanec-usgs/finite-fault-product.git`
- 
+ - `pip install git+https://github.com/usgs/finite-fault-product.git`
+
  Automatic environment creation using miniconda:
- 
- - `git clone https://github.com/hschovanec-usgs/finite-fault-product.git`
+
+ - `git clone https://github.com/usgs/finite-fault-product.git`
  - `cd finite-fault-product`
  - `bash install.sh`
  - `conda activate faultproduct`
@@ -59,7 +60,7 @@ product is designed to create eventpages and ShakeMap products.
 ## sendproduct
 Includes functionality to send a finite fault product.
 
-usage: sendproduct [-h] [-ffm2 FFM2] [-v COMMENT] [-r] net eventid ffm1
+usage: sendproduct [-h] [-ffm2 FFM2] [-v COMMENT] [-r] eventsource source eventid ffm1
 
 Send a finite fault product for event pages.
 
@@ -70,16 +71,16 @@ Send a finite fault product for event pages.
   <tr>
     <td>eventsource</td>
     <td>Source of the original event ID. (example: us, usp,
-                        ci).</td>
+                        ci)</td>
   </tr>
   <tr>
     <td>source</td>
     <td>Source of this product (i.e., contributor of the
-                        product. example: us).</td>
+                        product. example: us)</td>
   </tr>
   <tr>
     <td>eventid</td>
-    <td>Event identification code.</td>
+    <td>Event identification code</td>
   </tr>
   <tr>
     <td>ffm1</td>
@@ -166,16 +167,16 @@ Delete a finite-fault product for an event.
   <tr>
     <td>eventsource</td>
     <td>Source of the original event ID. (example: us, usp,
-                        ci).</td>
+                        ci)</td>
   </tr>
   <tr>
     <td>source</td>
     <td>Source of this product (i.e., contributor of the
-                        product. example: us).</td>
+                        product. example: us)</td>
   </tr>
   <tr>
     <td>eventid</td>
-    <td>Event identification code.</td>
+    <td>Event identification code</td>
   </tr>
 </table>
 
@@ -197,4 +198,4 @@ Delete a finite-fault product for an event.
   </tr>
 </table>
 
-See [docs](https://github.com/hschovanec-usgs/finite-fault-product/tree/master/docs) for more detailed explanations.
+See [docs](https://github.com/usgs/finite-fault-product/tree/master/docs) for more detailed explanations.
